@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Free PM Calculator</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="main.bundle.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="icon">
+        <a href="index.html"><img src="/logo.png"></a>
+      </div>
+      <div><a href="how_to_use.html"><h1>How to use it?</h1></a></div>
+      <div><a href="mailto:20bcm064@nirmauni.ac.in"><h1>Report Bugs?</h1></a></div>
+    </header>
+    <main>
+      <center><h1>Generates Critical Path Method Graph and PERT Chart for free!</h1></center>
+      <center><h3>Type your data, for multiple dependencies you can use comma to seperate them. Click "Generate Graph" to well... generate graph.</h3></center>
+      <div id="input-section">
+        <div id="table-input">
+          <table>
+            <thead>
+              <tr>
+                <th>Activity</th>
+                <th>Predecessor Activities</th>
+                <th>Duration</th>
+              </tr>
+            </thead>
+            <form>
+              <tbody>
+                <tr id="row0">
+                  <td><p class="act-name">A (start)</p></td>
+                  <td><input type="text" class="predec" /></td>
+                  <td><input type="number" class="duration" value="0" /></td>
+                </tr>
+                <tr id="row1">
+                  <td><p class="act-name">B</p></td>
+                  <td><input type="text" class="predec" value='A'/></td>
+                  <td><input type="number" class="duration" value="10" /></td>
+                </tr>
+                <tr id="row2">
+                  <td><p class="act-name">C (end)</p></td>
+                  <td><input type="text" class="predec" value='B'/></td>
+                  <td><input type="number" class="duration" value="5" /></td>
+                </tr>
+              </tbody>
+            </form>
+          </table>
+          <div>
+            <button id="add-row-btn">Add a row</button>
+            <button id="rmv-row-btn">Remove last row</button>
+          </div>
+        </div>
+        <div id="right-pane">
+          <button id="gen-graphs-btn">Generate Graph</button>
+          <p id="error-msg"></p>
+        </div>
+      </div>
+      <div id="cpm-graph" style="display: none">
+        <div class="graph-header"><h2>Critical Path Method Graph</h2></div>
+      </div>
+      <div id="pert-graph" style="display: none">
+        <div class="graph-header"><h2>PERT Graph</h2></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Made by Rishabh Saraswat</p>
+    </footer>
+  </body>
+</html>
