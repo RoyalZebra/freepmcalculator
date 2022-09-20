@@ -15,14 +15,15 @@
   ],
   "scripts": {
     "build": "webpack --color --progress --env.production",
-    "start": "webpack-dev-server --color --progress"
+    "start": "webpack-dev-server --color --progress",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Rishabh Saraswat (RoyalZebra)",
   "license": "GPL3",
   "bugs": {
     "url": "https://github.com/RoyalZebra/freepmcalculator/issues"
   },
-  "homepage": "https://github.com/RoyalZebra/freepmcalculator",
+  "homepage": "https://royalzebra.github.io/freepmcalculator",
   "dependencies": {
     "@types/d3": "^7.4.0",
     "@types/d3-drag": "3",
