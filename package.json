@@ -14,8 +14,8 @@
     "graph"
   ],
   "scripts": {
-    "build": "webpack --color --progress --env.production",
-    "start": "webpack-dev-server --color --progress",
+    "start": "webpack --mode=development && nodemon server",
+     "build": "webpack --mode=production && NODE_ENV=production",  
     "deploy": "gh-pages -d public"
   },
   "author": "Rishabh Saraswat (RoyalZebra)",
