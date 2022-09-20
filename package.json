@@ -16,7 +16,7 @@
   "scripts": {
     "build": "webpack --color --progress --env.production",
     "start": "webpack-dev-server --color --progress",
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages"
   },
   "author": "Rishabh Saraswat (RoyalZebra)",
   "license": "GPL3",
