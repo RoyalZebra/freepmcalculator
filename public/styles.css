@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.instruction-div{
+  margin: 10px;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+header {
+  width: 100vw;
+  min-height: 8%;
+  max-height: fit-content;
+  background-color: rgb(186, 174, 217);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-right: 100px;
+  padding-bottom: 10px;
+}
+
+header h1 {
+  font-size: 30px;
+}
+
+main{
+  margin: auto;
+  background-color: rgb(206, 202, 212);
+  min-height: 100vh;
+  max-height: fit-content;
+  width: 1200px;
+  border: 1px solid black;
+  padding: 10px;
+  padding-top: 30px;
+}
+img{
+  width: 400px;
+  height: 110px;
+}
+
+footer {
+  width: 100vw;
+  height: 8vh;
+  background-color: rgb(186, 174, 217);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-right: 100px;
+}
+
+#input-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin-left: 150px;
+  margin-right: 250px;
+  margin-top: 10px;
+}
+
+#table-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0;
+}
+
+th {
+  font-size: 18px;
+  margin: 10px;
+}
+
+p.act-name {
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+}
+
+input {
+  text-align: center;
+  font-size: 18px;
+  padding: 4px;
+  margin: 4px;
+}
+
+input[type='number'] {
+  width: 70px;
+}
+
+button {
+  font-size: 1em;
+  padding: 8px 20px;
+  display: inline;
+}
+
+#right-pane {
+  margin: 60px;
+}
+
+#error-msg {
+  color: red;
+  text-align: center;
+  max-width: 168px;
+}
+
+#cpm-graph,
+#pert-graph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  border-bottom: 1px solid black;
+  left: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	max-width: 100vw;
+	position: relative;
+	right: 50%;
+	width: 100vw;
+  background-color: #f6ffd4;
+}
+.graph-header{
+  margin-top: 10px;
+  padding-top: 10px;
+  text-align: center;
+  justify-content: center;
+}
+h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 36px;
+}
+
+svg {
+  max-height: 94vh;
+}
+
+#add-row-btn, #rmv-row-btn, #gen-graphs-btn{
+  background-color: rgb(52, 16, 232);
+  color: white;
+}

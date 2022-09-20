@@ -1,0 +1,38 @@
+{
+  "name": "freepmcalculator",
+  "version": "1.0.0",
+  "description": "Free CPM and PERT graph generator",
+  "main": "src/main.ts",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoyalZebra/freepmcalculator.git"
+  },
+  "keywords": [
+    "cpm",
+    "pert",
+    "graph"
+  ],
+  "scripts": {
+    "build": "webpack --color --progress --env.production",
+    "start": "webpack-dev-server --color --progress"
+  },
+  "author": "Rishabh Saraswat (RoyalZebra)",
+  "license": "GPL3",
+  "bugs": {
+    "url": "https://github.com/RoyalZebra/freepmcalculator/issues"
+  },
+  "homepage": "https://github.com/RoyalZebra/freepmcalculator",
+  "dependencies": {
+    "@types/d3": "^7.4.0",
+    "@types/d3-drag": "3",
+    "d3": "^7.6.1",
+    "gh-pages": "^4.0.0",
+    "npm-check-updates": "^16.2.1",
+    "ts-loader": "^9.4.0",
+    "typescript": "^4.8.3",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
